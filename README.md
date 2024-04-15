@@ -1,8 +1,8 @@
 1) Klonirate repozitorijum
 2) Ako radite front, otvorite terminal:
-   cd .\frontend\
-   npm install
-   npm run dev -- --host (za runovanje aplikacije)
+   cd .\frontend\ <br /> 
+   npm install <br /> 
+   npm run dev -- --host (za runovanje aplikacije) <br /> 
 3) Ako radite back, otvorite terminal:
    cd backend
    Set-ExecutionPolicy Unrestricted -Scope Process
