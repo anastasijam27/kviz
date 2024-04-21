@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, session
+from flask import Flask, request, render_template, redirect, session, jsonify
 from db import db, User
 
 app = Flask(__name__)
@@ -10,18 +10,18 @@ def index():
 @app.route('/register',methods=['GET','POST'])
 def register():
     if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        password = request.form['password']
-        existing_user = User.query.filter((User.name == name) | (User.email == email)).first()
+        data = request.json
+        name = data.get('name')
+        email = data.get('email')
+        password = data.get('password')
+        existing_user = User.query.filter((User.email == email)).first()
         if existing_user:
-            return render_template('register.html', error='Username or email already exists!')
+            return render_template('register.html', error='Email already exists!'), 400
         new_user = User(name=name,email=email)
         new_user.set_password(password)
         db.session.add(new_user)
         db.session.commit()
         return redirect('/login')
-    return render_template('register.html')
 
 @app.route('/login',methods=['GET','POST'])
 def login():
