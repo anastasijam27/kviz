@@ -9,17 +9,26 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">KGSV Quiz</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="dodaj link za log in.com"
 					target="_blank"
 					rel="noreferrer"
 				>
-					GitHub
+					Log In
 				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="dodaj link za sign up.com"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Sign Up
+				</a>
+
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
