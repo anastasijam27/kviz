@@ -14,16 +14,16 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="dodaj link za log in.com"
-					target="_blank"
+					href="./src/routes/login/login.svelte"
+					target="_self"
 					rel="noreferrer"
 				>
 					Log In
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="dodaj link za sign up.com"
-					target="_blank"
+					href="./src/routes/login/register.svelte"
+					target="_self"
 					rel="noreferrer"
 				>
 					Sign Up

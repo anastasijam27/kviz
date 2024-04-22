@@ -6,8 +6,8 @@
 
 		<a
 					class="btn btn-xl variant-ghost-surface"
-					href="dodaj link za log in.com"
-					target="_blank"
+					href="./src/routes/quiz/questions.svelte"
+					target="_self"
 					rel="noreferrer"
 					
 				>
@@ -16,8 +16,8 @@
 
 		<a
 					class="btn btn-lg variant-ghost-surface"
-					href="dodaj link za log in.com"
-					target="_blank"
+					href="./src/routes/high-scores/high_scores.svelte"
+					target="_self"
 					rel="noreferrer"
 				>
 					Leaderboards
@@ -25,8 +25,8 @@
 
 		<a
 					class="btn btn-lg variant-ghost-surface"
-					href="D:\Projekat\kviz\kviz\frontend\src\routes\how-to-play\how_to_play.svelte"
-					target="_blank"
+					href="./src/routes/how-to-play/how_to_play.svelte"
+					target="_self"
 					rel="noreferrer"
 				>
 					How to play
