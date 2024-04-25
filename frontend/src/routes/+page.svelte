@@ -31,8 +31,6 @@
 				>
 					How to play
 		</a>
-		
-		
 	</div>
 </div>
 
