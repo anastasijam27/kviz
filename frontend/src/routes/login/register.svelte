@@ -59,10 +59,6 @@
         border-radius: 5px;
         color: black;
     }
-
-    .text-error {
-        color: red;
-    }
     h2{
         padding: 10px;
     }

@@ -2,7 +2,7 @@
 	<div class="space-y-10 text-center flex flex-col items-center">
     Playing the Quiz:
 <p>Start the Quiz:
-Click ‘Start New Game’ to begin.
+Click 'Start New Game' to begin.
 Each quiz typically consists of multiple choice questions.
 Answering Questions:
 You will be presented with one question at a time.
@@ -20,6 +20,5 @@ Participate in quiz events or tournaments for more challenges and rewards.
 Have Fun and Learn!
 We hope you enjoy testing your knowledge and competing with others. Good luck, and let the quizzing begin!
 </p>
-
     </div>
     </div>
