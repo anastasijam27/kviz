@@ -1,9 +1,10 @@
 <script>
+    import {PUBLIC_API_URL} from "$env/static/public";
     let email = '';
     let password = '';
     let error = '';
     async function handleSubmit(){
-        const response = await fetch('/login', {
+        const response = await fetch(`${PUBLIC_API_URL}/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -29,9 +30,6 @@
         <div class="form-control">
             <input type="password" id="password" bind:value={password} placeholder="Password">
         </div>
-        {#if error}
-            <p class="text-error">{error}</p>
-        {/if}
         <button type="submit" class="btn variant-filled">Login</button>
     </form>
 </div>
@@ -55,10 +53,6 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         color: black;
-    }
-
-    .text-error {
-        color: red;
     }
     h2{
         padding: 10px;

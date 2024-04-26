@@ -14,7 +14,7 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="./src/routes/login/login.svelte"
+					href="/login"
 					target="_self"
 					rel="noreferrer"
 				>
@@ -22,7 +22,7 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="./src/routes/login/register.svelte"
+					href="/register"
 					target="_self"
 					rel="noreferrer"
 				>

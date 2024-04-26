@@ -1,13 +1,16 @@
 from flask import Flask, request, render_template, redirect, session, jsonify
-from db import db, User
+from .db import db, User
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
 @app.route('/register',methods=['GET','POST'])
+@cross_origin()
 def register():
     if request.method == 'POST':
         data = request.json
